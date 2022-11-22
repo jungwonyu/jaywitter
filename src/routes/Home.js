@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { dbService } from '../fbase';
+import Jweet from '../components/Jwitter';
 
 const Home = ({ userObj }) => {
   const [jweet, setJweet] = useState('');
@@ -48,9 +49,11 @@ const Home = ({ userObj }) => {
       </form>
       <div>
         {jweets.map((jweet) => (
-          <div key={jweet.id}>
-            <h4>{jweet.text}</h4>
-          </div>
+          <Jweet
+            key={jweet.id}
+            jweetObj={jweet}
+            isOwner={jweet.creatorId === userObj.uid}
+          />
         ))}
       </div>
     </>
