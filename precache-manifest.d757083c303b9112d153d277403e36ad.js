@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "5aa6b1d2c157acbd857a",
-    "url": "/jaywitter/static/css/main.d5844b57.chunk.css"
+    "revision": "5d06db8273ecb8832233",
+    "url": "/jaywitter/static/css/main.625192ff.chunk.css"
   },
   {
-    "revision": "5aa6b1d2c157acbd857a",
+    "revision": "5d06db8273ecb8832233",
     "url": "/jaywitter/static/js/main.45791515.chunk.js"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/jaywitter/static/media/logo.fe44d7ed.png"
   },
   {
-    "revision": "484906337a1fdf3bdd02df39b4dfcb87",
+    "revision": "7ae64c64d886ef2640c554ec76b221df",
     "url": "/jaywitter/index.html"
   }
 ];
