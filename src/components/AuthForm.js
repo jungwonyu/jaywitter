@@ -22,7 +22,7 @@ const AuthForm = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
-      let data;
+      let data; //eslint-disable-line no-unused-vars
       if (newAccount) {
         // create account
         data = await authService.createUserWithEmailAndPassword(
@@ -42,15 +42,19 @@ const AuthForm = () => {
 
   return (
     <>
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} className='container'>
+        <p className='authLabel'>Email</p>
         <input
           name='email'
           type='email'
-          placeholder='Email'
+          placeholder='name@mail.com'
           required
           value={email}
           onChange={onChange}
+          className='authInput'
         />
+
+        <p className='authLabel'>Password</p>
         <input
           name='password'
           type='password'
@@ -58,11 +62,17 @@ const AuthForm = () => {
           required
           value={password}
           onChange={onChange}
+          className='authInput'
         />
-        <input type='submit' value={newAccount ? 'Create Account' : 'Log In'} />
-        {error}
+
+        <input
+          type='submit'
+          value={newAccount ? 'Create Account' : 'Log In'}
+          className='authInput authSubmit'
+        />
+        {error && <span className='authError'>{error}</span>}
       </form>
-      <span onClick={toggleAccount}>
+      <span onClick={toggleAccount} className='authSwitch'>
         {newAccount ? 'Sign in' : 'Create Account'}
       </span>
     </>

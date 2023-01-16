@@ -1,0 +1,352 @@
+@import 'https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css';
+
+/* 
+primaryColor: #92A3FD / #9DCEFF
+linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
+
+secondaryColor: #C58BF2 / #EEA4CE
+linear-gradient(274.42deg, #C58BF2 0%, #EEA4CE 124.45%);
+
+black: #1D1617
+red: #FF0000
+white: #FFFFFF
+gray1: #7B6F72
+gray2: #ADA4A5
+gray3: #DDDADA
+
+buttonShadow: box-shadow:  0px 10px 22px rgba(149, 173, 254, 0.3)
+
+title: 16px 700
+subtitle: 14px
+body: 12px
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  all: unset;
+  box-sizing: border-box;
+  appearance: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: linear-gradient(90deg, #cfd9df 0%, #e2ebf0 100%);
+  font-size: 14px;
+  color: #1d1617;
+}
+
+button {
+  background: linear-gradient(274.42deg, #92a3fd 0%, #9dceff 124.45%);
+  color: #ffffff;
+  box-shadow: 0px 10px 22px rgba(149, 173, 254, 0.3);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+form {
+  width: 100%;
+}
+
+.jweet-input::placeholder {
+  color: #7b6f72;
+  opacity: 0.9;
+}
+
+.container {
+  width: 100%;
+  max-width: 320px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.formInput {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #1d1617;
+  box-shadow: 0px 10px 22px rgba(149, 173, 254, 0.3);
+}
+
+.formBtn {
+  cursor: pointer;
+  width: 100%;
+  padding: 7px 20px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 20px;
+  background: linear-gradient(274.42deg, #92a3fd 0%, #9dceff 124.45%);
+  border: none;
+  font-weight: 600;
+}
+
+.cancelBtn {
+  cursor: pointer;
+  background: #ff0000;
+  opacity: 0.3;
+}
+
+/* Profile Page */
+
+.profileForm {
+  border-bottom: 1px solid #ada4a5;
+  padding-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logOut {
+  margin-top: 30px;
+}
+
+/* Jwitter Factory */
+
+.factoryForm {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.factoryInput__container {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.factoryInput__input {
+  width: 100%;
+  flex-grow: 1;
+  height: 40px;
+  padding: 20px;
+
+  border: 1px solid #9dceff;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 12px;
+
+  flex-wrap: wrap;
+
+  box-shadow: 0px 10px 22px rgba(149, 173, 254, 0.3);
+  background-color: #ffffff;
+}
+
+.factoryInput__arrow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(274.42deg, #92a3fd 0%, #9dceff 124.45%);
+  height: 100%;
+  width: 40px;
+  padding: 10px 0px;
+  text-align: center;
+  border-radius: 0 10px 10px 0;
+  color: #ffffff;
+}
+
+.factoryInput__label {
+  color: #92a3fd;
+  cursor: pointer;
+}
+
+.factoryInput__label span {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.factoryForm__attachment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.factoryForm__attachment img {
+  height: 80px;
+  width: 80px;
+
+  border-radius: 10px;
+}
+
+.factoryForm__clear {
+  margin-top: 10px;
+  color: #92a3fd;
+  cursor: pointer;
+}
+
+.factoryForm__clear span {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+/* Jweet */
+
+.jweet {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 320px;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.8);
+  vertical-align: middle;
+}
+
+.jweetEdit .formBtn {
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.jweet h4 {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.jweet img {
+  right: -10px;
+  top: 20px;
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.jweet__actions {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.jweet__actions span {
+  cursor: pointer;
+}
+
+.jweet__actions span:first-child {
+  margin-right: 10px;
+}
+
+/* Auth */
+
+.authContainer {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.authBtns {
+  width: 100%;
+  max-width: 320px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.authBtn {
+  width: 150px;
+
+  border: none;
+  border-radius: 20px;
+
+  padding: 10px 0px;
+  font-size: 12px;
+  text-align: center;
+
+  background: linear-gradient(274.42deg, #c58bf2 0%, #eea4ce 124.45%);
+  box-shadow: 0px 10px 22px rgba(149, 173, 254, 0.3);
+  cursor: pointer;
+}
+
+/* AuthForm */
+
+.authInput {
+  width: 100%;
+  max-width: 320px;
+  height: 40px;
+
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  font-size: 12px;
+
+  background-color: #ffffff;
+  color: #1d1617;
+  box-shadow: 0px 10px 22px rgba(149, 173, 254, 0.3);
+}
+
+.authSubmit {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: linear-gradient(274.42deg, #92a3fd 0%, #9dceff 124.45%);
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.authError {
+  color: tomato;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.authLabel {
+  color: #1d1617;
+  font-size: 14px;
+  margin: 0 0 4px 10px;
+}
+
+.authSwitch {
+  color: #1d1617;
+  cursor: pointer;
+  margin-bottom: 40px;
+
+  text-align: center;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+/* Navigation */
+
+.navigation__ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 50px;
+}
+
+.navigation__profile {
+  margin: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: #1d1617;
+}

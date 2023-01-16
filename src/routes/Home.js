@@ -8,19 +8,22 @@ const Home = ({ userObj }) => {
   const [jweets, setJweets] = useState([]);
 
   useEffect(() => {
-    dbService.collection('jweets').onSnapshot((snapshot) => {
-      const jweetArray = snapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
-      setJweets(jweetArray);
-    });
+    dbService
+      .collection('jweets')
+      .orderBy('createdAt', 'desc')
+      .onSnapshot((snapshot) => {
+        const jweetArray = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setJweets(jweetArray);
+      });
   }, []);
 
   return (
-    <>
+    <div className='container'>
       <JweetFactory userObj={userObj} />
-      <div>
+      <div style={{ marginTop: 30 }}>
         {jweets.map((jweet) => (
           <Jweet
             key={jweet.id}
@@ -29,7 +32,7 @@ const Home = ({ userObj }) => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
