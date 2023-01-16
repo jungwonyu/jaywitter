@@ -125,6 +125,7 @@ form {
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   flex-wrap: wrap;
   position: relative;
@@ -133,14 +134,13 @@ form {
 
 .factoryInput__input {
   flex-grow: 1;
-  padding: 20px;
-
+  height: 40px;
+  padding: 0px 20px;
+  color: white;
   border: 1px solid #9dceff;
-  border-radius: 10px;
+  border-radius: 20px;
   font-weight: 500;
   font-size: 12px;
-
-  flex-wrap: wrap;
 
   box-shadow: 0px 10px 22px rgba(149, 173, 254, 0.3);
   background-color: #ffffff;
@@ -148,14 +148,16 @@ form {
 
 .factoryInput__arrow {
   position: absolute;
-  bottom: 0;
   right: 0;
   background: linear-gradient(274.42deg, #92a3fd 0%, #9dceff 124.45%);
-  height: 100%;
+
+  height: 40px;
   width: 40px;
+  border-radius: 20px;
+
   padding: 10px 0px;
   text-align: center;
-  border-radius: 0 10px 10px 0;
+
   color: #ffffff;
 }
 
@@ -270,7 +272,7 @@ form {
   width: 150px;
 
   border: none;
-  border-radius: 16px;
+  border-radius: 20px;
 
   padding: 10px 0px;
   font-size: 12px;
@@ -287,7 +289,7 @@ form {
   max-width: 320px;
 
   padding: 10px 0 10px 20px;
-  border-radius: 16px;
+  border-radius: 20px;
   margin-bottom: 20px;
   font-size: 12px;
 
