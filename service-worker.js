@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/jaywitter/precache-manifest.59529ef683368adeb34c9d2d61484385.js"
+  "/jaywitter/precache-manifest.e8596b0a718d9d4e3da0eff858b7ac6a.js"
 );
 
 workbox.clientsClaim();
