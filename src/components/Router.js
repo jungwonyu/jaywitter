@@ -13,7 +13,7 @@ const AppRouter = ({ isLoggedIn, userObj, refreshUser }) => {
         {isLoggedIn ? (
           <div
             style={{
-              maxWidth: 890,
+              maxWidth: 320,
               height: '100vh',
               width: '100%',
               margin: '0 auto',

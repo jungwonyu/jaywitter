@@ -33,9 +33,9 @@ input {
 }
 
 body {
+  background-image: linear-gradient(90deg, #c2e9fb 0%, #a1c4fd 100%);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-image: linear-gradient(90deg, #cfd9df 0%, #e2ebf0 100%);
   font-size: 14px;
   color: #1d1617;
 }
@@ -69,25 +69,25 @@ form {
 }
 
 .formInput {
-  width: 100%;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 16px;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #f7f8f8;
+  border: 1px solid #dddada;
   color: #1d1617;
   box-shadow: 0px 10px 22px rgba(149, 173, 254, 0.3);
 }
 
 .formBtn {
   cursor: pointer;
-  width: 100%;
   padding: 7px 20px;
   text-align: center;
   color: #ffffff;
-  border-radius: 20px;
+  border-radius: 16px;
   background: linear-gradient(274.42deg, #92a3fd 0%, #9dceff 124.45%);
   border: none;
   font-weight: 600;
+  box-shadow: 0px 10px 22px rgba(149, 173, 254, 0.3);
 }
 
 .cancelBtn {
@@ -132,9 +132,7 @@ form {
 }
 
 .factoryInput__input {
-  width: 100%;
   flex-grow: 1;
-  height: 40px;
   padding: 20px;
 
   border: 1px solid #9dceff;
@@ -210,6 +208,8 @@ form {
   flex-direction: column;
   color: rgba(0, 0, 0, 0.8);
   vertical-align: middle;
+
+  word-break: break-all;
 }
 
 .jweetEdit .formBtn {
@@ -270,7 +270,7 @@ form {
   width: 150px;
 
   border: none;
-  border-radius: 20px;
+  border-radius: 16px;
 
   padding: 10px 0px;
   font-size: 12px;
@@ -284,11 +284,9 @@ form {
 /* AuthForm */
 
 .authInput {
-  width: 100%;
   max-width: 320px;
-  height: 40px;
 
-  padding: 20px;
+  padding: 10px 0 10px 20px;
   border-radius: 16px;
   margin-bottom: 20px;
   font-size: 12px;
@@ -299,7 +297,6 @@ form {
 }
 
 .authSubmit {
-  width: 100%;
   padding: 10px;
   text-align: center;
   background: linear-gradient(274.42deg, #92a3fd 0%, #9dceff 124.45%);
@@ -325,7 +322,7 @@ form {
 .authSwitch {
   color: #1d1617;
   cursor: pointer;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
   text-align: center;
   font-size: 12px;

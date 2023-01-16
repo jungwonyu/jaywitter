@@ -43,18 +43,16 @@ const AuthForm = () => {
   return (
     <>
       <form onSubmit={onSubmit} className='container'>
-        <p className='authLabel'>Email</p>
         <input
           name='email'
           type='email'
-          placeholder='name@mail.com'
+          placeholder='Email'
           required
           value={email}
           onChange={onChange}
           className='authInput'
         />
 
-        <p className='authLabel'>Password</p>
         <input
           name='password'
           type='password'
