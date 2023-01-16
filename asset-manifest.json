@@ -1,14 +1,14 @@
 {
-  "main.css": "/jaywitter/static/css/main.1d5adfa1.chunk.css",
-  "main.js": "/jaywitter/static/js/main.ae1bc3ed.chunk.js",
-  "main.js.map": "/jaywitter/static/js/main.ae1bc3ed.chunk.js.map",
+  "main.css": "/jaywitter/static/css/main.506caa51.chunk.css",
+  "main.js": "/jaywitter/static/js/main.45791515.chunk.js",
+  "main.js.map": "/jaywitter/static/js/main.45791515.chunk.js.map",
   "runtime~main.js": "/jaywitter/static/js/runtime~main.05f04634.js",
   "runtime~main.js.map": "/jaywitter/static/js/runtime~main.05f04634.js.map",
   "static/js/2.ec8a9b5e.chunk.js": "/jaywitter/static/js/2.ec8a9b5e.chunk.js",
   "static/js/2.ec8a9b5e.chunk.js.map": "/jaywitter/static/js/2.ec8a9b5e.chunk.js.map",
   "index.html": "/jaywitter/index.html",
-  "precache-manifest.8c7c21559458cf6b7cab01ab52c120d2.js": "/jaywitter/precache-manifest.8c7c21559458cf6b7cab01ab52c120d2.js",
+  "precache-manifest.59529ef683368adeb34c9d2d61484385.js": "/jaywitter/precache-manifest.59529ef683368adeb34c9d2d61484385.js",
   "service-worker.js": "/jaywitter/service-worker.js",
-  "static/css/main.1d5adfa1.chunk.css.map": "/jaywitter/static/css/main.1d5adfa1.chunk.css.map",
+  "static/css/main.506caa51.chunk.css.map": "/jaywitter/static/css/main.506caa51.chunk.css.map",
   "static/media/logo.png": "/jaywitter/static/media/logo.fe44d7ed.png"
 }
